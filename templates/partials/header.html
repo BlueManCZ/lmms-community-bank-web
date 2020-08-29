@@ -1,0 +1,12 @@
+<header class="global-header">
+    <div class="specify">
+        <img src="/static/images/logo.png" alt="books icon"><a class="title" href="/">LMMS Community Bank</a><span>A community preset collection</span>
+        <div class="right-side">
+            <nav>
+                <form method="get" action="/search">
+                    <label><input type="text" name="q" placeholder="Quick search"></label><input class="submit" type="submit">
+                </form><a href="/categories" class="browser">Categories</a><div class="separator"></div><!--a href="/docs/about">About project</a><div class="separator"></div-->{% if session.login %}<a href="/account">{{session.login}}</a>{% else %}<a href="/login{% if url %}?next={{ url }}{% endif %}">Sign in</a>{% endif %}
+            </nav>
+        </div>
+    </div>
+</header>

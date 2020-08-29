@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Cantarell;
+  font-weight: 200;
+  src: url("/fonts/Cantarell-Thin.otf") format("opentype"); }
+@font-face {
+  font-family: Cantarell;
+  font-weight: 300;
+  src: url("/fonts/Cantarell-Light.otf") format("opentype"); }
+@font-face {
+  font-family: Cantarell;
+  src: url("/fonts/Cantarell-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: Cantarell;
+  font-weight: bold;
+  src: url("/fonts/Cantarell-Bold.otf") format("opentype"); }
+@font-face {
+  font-family: Cantarell;
+  font-weight: 900;
+  src: url("/fonts/Cantarell-ExtraBold.otf") format("opentype"); }
+@font-face {
+  font-family: Cantarell;
+  font-weight: 200;
+  src: url("/fonts/Cantarell-Thin.otf") format("opentype"); }
+@font-face {
+  font-family: Hack;
+  src: url("/fonts/Hack-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: Hack;
+  font-weight: bold;
+  src: url("/fonts/Hack-Bold.ttf") format("truetype"); }
+.link {
+  text-decoration: none;
+  color: #408ACA; }
+  .link:hover {
+    color: #2d5b88;
+    text-decoration: underline; }
+
+.darklink {
+  text-decoration: none;
+  color: #88C8FF; }
+  .darklink:hover {
+    color: #6294c1;
+    text-decoration: underline; }
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important; }
+
+#loader {
+  transition: opacity 0.8s cubic-bezier(0.62, 1.71, 1, 1.64), margin-top 0.3s step-start;
+  transition-timing-function: cubic-bezier(0.62, 1.71, 1, 1.64), steps(1, start);
+  opacity: 1; }
+
+.loading_hidden {
+  opacity: 0 !important;
+  margin-top: -1000%;
+  transition-timing-function: cubic-bezier(0.62, 1.71, 1, 1.64), step-end !important; }
+  .loading_hidden img {
+    transform: scale(0); }
+
+.note {
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #e9f8ff;
+  border: solid 1px #bce8f1;
+  border-radius: 4px;
+  color: #057eae; }
+  .note div {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; }
+    .note div img {
+      width: 18px;
+      padding: 0;
+      vertical-align: sub; }
+
+.highlight {
+  color: #df8585; }
+
+/*# sourceMappingURL=variables.css.map */

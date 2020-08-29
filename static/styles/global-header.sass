@@ -1,0 +1,115 @@
+@import 'variables'
+
+.global-header
+  background: white
+  padding: 15px 0
+  font-family: $font1
+  color: $color1
+  position: fixed
+  width: 100%
+  z-index: 1000
+  top: 0
+  box-shadow: 0 0 2px
+  height: 30px
+
+  .specify
+    top: 2px
+
+  img
+    height: 25px
+    position: relative
+    vertical-align: bottom
+    margin-right: 8px
+
+  .title
+    outline: none
+    text-decoration: none
+    font-size: 20px
+    font-weight: bold
+    color: $color1
+
+    &:hover
+      color: $color2
+      box-shadow: inset 0 -2px 0
+
+  span
+    font-size: 15px
+    margin-left: 10px
+
+  .right-side
+    float: right
+
+    nav
+      a
+        position: relative
+        margin-left: 10px
+        vertical-align: top
+        top: 3px
+        padding: 3px 6px
+        text-decoration: none
+        color: $color1
+        border-radius: 4px
+        outline: none
+
+        &:hover
+          color: $color2
+          background: $color3
+
+        &:active
+          color: $color2
+          background: $color4
+
+      .separator
+        position: relative
+        width: 1px
+        height: 15px
+        background: $color1
+        display: inline-block
+        vertical-align: super
+        margin-left: 11px
+        margin-right: 2px
+
+      form
+        display: inline-block
+        position: relative
+        border: solid 1px #ddd
+        border-radius: 20px
+        overflow: hidden
+        white-space: nowrap
+
+        input
+          position: relative
+          background: $color3
+          font-family: $font1
+          color: $color1
+          font-size: 15px
+          padding: 2px 8px
+          width: 200px
+          border: 0
+          line-height: 20px
+          outline: none
+
+          &::placeholder
+            color: $color1
+
+          &:focus
+            color: $color2
+
+            &::placeholder
+              color: $color2
+
+        .submit
+          display: none
+
+@media (max-width: 800px)
+  .global-header
+    span
+      display: none
+
+@media (max-width: 620px)
+  .global-header
+    .right-side nav
+      form
+        display: none
+      .separator
+        margin-top: 6px

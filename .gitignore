@@ -1,0 +1,9 @@
+# Adminer
+adminer/
+
+# PyCharm 
+.idea/
+__pycache__/
+
+# SASS
+.sass-cache/

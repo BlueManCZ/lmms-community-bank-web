@@ -1,0 +1,34 @@
+{% extends "layouts/default.html" %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+{% block body %}
+    <figure id="particles-js" class="banner" title="particles.js">
+        <div class="specify">
+            <h2 class="slogan">A place where community<br>composers share their presets</h2>
+            <h3>LMMS Community Bank is a collection of presets made by community composers. Everyone can contribute!</h3>
+            <img src="/static/images/logo.png" alt="example image" class="image">
+            <form method="get" action="/search">
+                <label><input type="text" name="q" placeholder="Quick search"></label><input class="submit" type="submit">
+            </form>
+        </div>
+    </figure>
+    <main>
+        <div class="specify">
+            <h3>Website is under construction. Content will be added soon.</h3>
+
+            <h3>Join our <a class="link" href="https://discord.gg/ZsuhJF2">Discord server</a> and stay in touch!</h3>
+        </div>
+    </main>
+    <main>
+        <div class="specify" style="text-align: center">
+            <a class="github" href="https://github.com/BlueManCZ/lmms-community-bank" target="_blank">View source on GitHub</a>
+            <a href="https://discord.gg/ZsuhJF2" target="_blank"><img alt="Join our Discord" src="/static/images/discord.png" class="discord"></a>
+        </div>
+    </main>
+    {% include "partials/footer.html" %}
+    <script src="/static/js/particles.js/particles.js"></script>
+    <script src="/static/js/particles.js/app.js"></script>
+{% endblock %}
