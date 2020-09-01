@@ -7,27 +7,66 @@
 {% block body %}
     <figure id="particles-js" class="banner" title="particles.js">
         <div class="specify">
-            <h2 class="slogan">A place where community<br>composers share their presets</h2>
-            <h3>LMMS Community Bank is a collection of presets made by community composers. Everyone can contribute!</h3>
+            <h2 class="slogan">Collection of presets and samples<br>made by community composers</h2>
+            <h3>Our goal is to create a library of LMMS presets and samples and a&nbsp;platform where we can together make them. Everyone can contribute!</h3>
             <img src="/static/images/logo.png" alt="example image" class="image">
             <form method="get" action="/search">
                 <label><input type="text" name="q" placeholder="Quick search"></label><input class="submit" type="submit">
             </form>
         </div>
     </figure>
-    <main>
+    <figure class="notification">
+        <div class="specify">We are currently working on the first release. Join us on our <a class="link" href="https://discord.gg/ZsuhJF2" target="_blank">Discord server</a> and get involved!</div>
+    </figure>
+    <main class="about">
         <div class="specify">
-            <h3>Website is under construction. Content will be added soon.</h3>
+            <div class="tile">
+                <div class="container">
+                    <img src="/static/images/icons/people.svg" alt="Community icon">
+                </div>
+                <h1>All about the community</h1>
+                <p>LMMS Community Bank project was born by the wish&nbsp;of a vast community to&nbsp;add a&nbsp;personal touch to&nbsp;the LMMS.</p>
+            </div><div class="tile">
+                <div class="container">
+                    <img src="/static/images/icons/song.svg" alt="Music icon">
+                </div>
+                <h1>Even you can contribute</h1>
+                <p>Our group is filling by music composers, producers and developers willing to help you to improve presets or samples you want to share.</p>
+            </div><div class="tile">
+                <div class="container">
+                    <img src="/static/images/icons/discord.svg" alt="Discord icon">
+                </div>
+                <h1>You can find us on&nbsp;Discord</h1>
+                <p>We have created our <a href="https://discord.gg/ZsuhJF2" target="_blank">Discord server</a> so&nbsp;we can have a&nbsp;place to discuss our ideas and share LMMS presets and samples.</p>
+            </div><div class="tile">
+                <div class="container">
+                    <img src="/static/images/icons/box.svg" alt="Package icon">
+                </div>
+                <h1>All presets and samples in one</h1>
+                <p>We plan to release this project as one big library. This file will be possible to import to the LMMS and start using immediately.</p>
+            </div>
 
-            <h3>Join our <a class="link" href="https://discord.gg/ZsuhJF2">Discord server</a> and stay in touch!</h3>
+            <!--h3>Join our <a class="link" href="https://discord.gg/ZsuhJF2">Discord server</a> and stay in touch!</h3-->
 
-            <iframe style="margin: auto;margin-bottom: 100px;position: relative;display: block;" width="300px" height="200px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/706985788&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <!--iframe style="margin: auto;margin-bottom: 100px;position: relative;display: block;" width="300px" height="200px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/706985788&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe-->
         </div>
     </main>
-    <main>
+    <main class="discord">
+        <div class="specify">
+            <div class="discord-info">
+                <h2>Our Discord server</h2>
+                <h1>LMMS Community Bank</h1>
+                <p>We use this server as a <b>sharing platform</b> for our presets and samples.</p>
+                <p>There are channels for discussions about <b>content quality</b>, presets and samples <b>creation</b> and project <b>improvements</b>.</p>
+                <p>Our members come from <b>all over the world</b>. So don't worry if English is not your native language. We are all musicians, and <b>we understand each other</b>.</p>
+                <p>You can help us by spreading this server between your friends and over the internet.</p>
+                <a class="discord-button" href="https://discord.gg/ZsuhJF2" target="_blank"><img alt="Join our Discord" src="/static/images/discord-button.png"></a>
+            </div><iframe class="discord-widget" src="https://discordapp.com/widget?id=749239193535905862&theme=dark" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </main>
+    <main class="sources">
         <div class="specify" style="text-align: center">
-            <a class="github" href="https://github.com/BlueManCZ/lmms-community-bank" target="_blank">View source on GitHub</a>
-            <a href="https://discord.gg/ZsuhJF2" target="_blank"><img alt="Join our Discord" src="/static/images/discord.png" class="discord"></a>
+            <a href="https://github.com/BlueManCZ/lmms-community-bank"><img class="python" src="/static/images/source-on-github.png" alt="View source on GitHub" title="View source on GitHub"></a><a href="https://www.python.org/"><img class="python" src="/static/images/python-powered.png" alt="Website powered by Python" title="Website powered by Python"></a>
         </div>
     </main>
     {% include "partials/footer.html" %}

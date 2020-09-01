@@ -4,8 +4,8 @@
         <div class="right-side">
             <nav>
                 <form method="get" action="/search">
-                    <label><input type="text" name="q" placeholder="Quick search"></label><input class="submit" type="submit">
-                </form><a href="/categories" class="browser">Categories</a><div class="separator"></div><!--a href="/docs/about">About project</a><div class="separator"></div-->{% if session.login %}<a href="/account">{{session.login}}</a>{% else %}<a href="/login{% if url %}?next={{ url }}{% endif %}">Sign in</a>{% endif %}
+                    <!--label><input type="text" name="q" placeholder="Quick search"></label><input class="submit" type="submit"-->
+                </form><a style="cursor: not-allowed" class="browser" title="The project has not been released yet.">Download</a><div class="separator"></div><!--a href="/docs/about">About project</a><div class="separator"></div-->{% if session.login %}<a href="/account">{{session.login}}</a>{% else %}<a href="/login{% if url %}?next={{ url }}{% endif %}">Sign in</a>{% endif %}
             </nav>
         </div>
     </div>

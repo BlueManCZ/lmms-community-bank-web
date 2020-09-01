@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>{% block title %}LMMS Community Bank{% endblock %}</title>
-    <link rel="icon" type="image/png" href="/static/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Collection of presets and samples made by community composers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="LMMS Community Bank">
+    <meta property="og:description" content="Collection of presets and samples made by community composers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://lcb.webly3d.net/static/images/facebook_banner.jpg">
+    <meta property="og:url" content="http://lcb.webly3d.net">
+
+    <link rel="shortcut icon" type="image/png" href="/static/images/logo.png">
     {% block stylesheets %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         function hideLoader() {
             document.getElementsByClassName('preload')[0].classList.remove('preload');

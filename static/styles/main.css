@@ -220,7 +220,8 @@
       display: inline-block;
       vertical-align: super;
       margin-left: 11px;
-      margin-right: 2px; }
+      margin-right: 2px;
+      top: 7px; }
     .global-header .right-side nav form {
       display: inline-block;
       position: relative;
@@ -341,12 +342,13 @@
 
 #global-footer {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-bottom: 20px;
-  font-family: Cantarell, Verdana, sans-serif; }
+  font-family: Cantarell, Verdana, sans-serif;
+  font-size: 20px; }
 
 body {
-  background: white;
+  background: #f6f6f6;
   margin: 0;
   padding-top: 60px; }
 
@@ -372,40 +374,119 @@ body {
     left: 60px;
     text-shadow: 2px 2px 2px #444;
     top: 80px;
-    font-size: 46px; }
+    font-size: 42px; }
   #particles-js h3 {
     font-size: 22px;
     top: 210px;
-    max-width: 540px; }
+    max-width: 705px; }
   #particles-js .image {
     display: block;
     position: absolute;
-    right: 100px;
+    right: 70px;
     height: 210px;
     top: 70px;
     border-radius: 10px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); }
 
+.notification {
+  text-align: center;
+  background: #5f77cc;
+  margin: 0;
+  padding: 16px 0;
+  font-family: Cantarell, Verdana, sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 60px;
+  z-index: 10; }
+  .notification .link {
+    color: #FFEF00; }
+    .notification .link:hover {
+      color: #FFEF00; }
+
+.about {
+  background: #f6f6f6; }
+  .about .specify {
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap; }
+
+.discord {
+  background: #202225; }
+  .discord .specify {
+    max-width: 1100px; }
+  .discord .discord-info {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 390px);
+    margin: 10px; }
+    .discord .discord-info p {
+      font-size: 18px;
+      color: #e6e6e6;
+      margin-right: 30px; }
+  .discord .discord-widget {
+    box-shadow: 0 0 0 2px #7289da;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    border: 0; }
+  .discord h1 {
+    color: #f6f6f6;
+    margin-bottom: 32px; }
+  .discord h2, .discord #particles-js h3, #particles-js .discord h3 {
+    color: #aaa;
+    text-transform: uppercase; }
+
 main {
-  font-family: Cantarell, Verdana, sans-serif; }
+  font-family: Cantarell, Verdana, sans-serif;
+  padding: 40px 0; }
+  main .image-parent {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px 25px 20px;
+    background: #00af50;
+    border-radius: 100%;
+    box-shadow: 0 0 4px silver;
+    vertical-align: middle; }
+    main .image-parent img {
+      position: relative;
+      display: block;
+      width: 67px;
+      filter: invert(1);
+      -webkit-filter: invert(1); }
   main .tile {
     display: inline-block;
     text-align: center;
-    padding: 60px 20px;
-    width: calc(25% - 40px);
-    vertical-align: top; }
+    padding: 30px 20px;
+    width: calc(25% - 60px);
+    vertical-align: top;
+    background: white;
+    box-shadow: 0 0 5px silver;
+    border-radius: 8px;
+    margin: 10px; }
     main .tile .container {
       display: inline-block;
-      background: #034f08;
       width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      padding: 25px;
+      padding: 7px 20px 20px;
       box-sizing: border-box; }
       main .tile .container img {
         width: 100%;
-        filter: invert(1);
-        -webkit-filter: invert(1); }
+        filter: contrast(0%) sepia(100%) hue-rotate(65deg) contrast(250%) brightness(70%);
+        -webkit-filter: contrast(0%) sepia(100%) hue-rotate(65deg) contrast(250%) brightness(70%); }
+    main .tile p {
+      margin: 5px 7px; }
+  main h1 {
+    margin-top: 0;
+    font-size: 25px;
+    color: #555; }
+  main h2, main #particles-js h3, #particles-js main h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 0; }
   main h3 {
     font-size: 23px;
     font-weight: bold;
@@ -414,7 +495,10 @@ main {
     margin: 100px 0; }
   main p {
     margin-top: 4px;
-    color: #666; }
+    color: #666;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle; }
     main p span {
       position: relative;
       top: 7px;
@@ -443,6 +527,20 @@ main {
       vertical-align: top;
       margin-right: 4px; }
 
+.sources a {
+  display: inline-block;
+  margin: 0 20px; }
+
+.python {
+  display: inline-block;
+  height: 80px;
+  vertical-align: middle;
+  transition: ease-in-out 50ms; }
+  .python:hover {
+    transform: scale(1.03);
+    filter: contrast(1.2);
+    -webkit-filter: contrast(1.2); }
+
 .github {
   background: #034f08;
   display: inline-block;
@@ -458,14 +556,18 @@ main {
     transform: scale(1.03);
     box-shadow: 0 0 10px silver; }
 
-.discord {
-  vertical-align: top;
-  height: 54px;
-  margin: 30px 45px 50px;
-  border-radius: 10px; }
-  .discord:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px silver; }
+.discord-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 25px; }
+  .discord-button img {
+    height: 47px;
+    transition: all ease-in-out 40ms;
+    display: block;
+    border-radius: 50px; }
+    .discord-button img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 5px #5a5a5a; }
 
 .banner form {
   position: absolute;
@@ -503,12 +605,19 @@ main {
     left: 0 !important;
     text-align: center !important; }
 
+  main {
+    padding: 20px 0; }
+
   main .tile, .category {
-    width: calc(50% - 40px) !important;
+    width: calc(50% - 60px) !important;
     padding-bottom: 10px; }
 
   .github {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .discord-info {
+    width: calc(100% - 450px);
+    margin: 10px 30px; } }
 @media (max-width: 800px) {
   .banner {
     height: 300px !important; }
@@ -517,20 +626,29 @@ main {
     .banner h3 {
       font-size: 15px !important;
       top: 180px !important;
-      max-width: 370px !important; } }
+      max-width: 370px !important; }
+
+  .discord-info {
+    width: calc(100% - 60px) !important;
+    margin: 10px 0 !important;
+    padding: 0 30px; }
+    .discord-info p {
+      margin-right: 0 !important; }
+
+  .discord-widget {
+    width: calc(100% - 60px) !important;
+    margin: 30px !important; } }
 @media (max-width: 620px) {
   main .tile, .category {
-    width: calc(100% - 30px) !important; }
+    width: 100% !important; }
 
   .banner {
-    height: 275px !important; }
+    height: 220px !important; }
     .banner .slogan {
       font-size: 26px !important;
       top: 35px !important; }
     .banner h3 {
       font-size: 17px !important;
-      top: 125px !important; }
-    .banner form {
-      display: block; } }
+      top: 125px !important; } }
 
 /*# sourceMappingURL=main.css.map */
