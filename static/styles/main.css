@@ -387,7 +387,8 @@ body {
     height: 210px;
     top: 70px;
     border-radius: 10px;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    z-index: 1; }
 
 .notification {
   text-align: center;
