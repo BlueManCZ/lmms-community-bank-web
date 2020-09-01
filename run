@@ -1,0 +1,1 @@
+uwsgi --socket :8009 -w WSGI:app --py-autoreload 1
