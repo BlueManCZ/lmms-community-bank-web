@@ -375,7 +375,8 @@ body {
     left: 60px;
     text-shadow: 2px 2px 2px #444;
     top: 80px;
-    font-size: 42px; }
+    font-size: 42px;
+    z-index: 1; }
   #particles-js h3 {
     font-size: 22px;
     top: 210px;
