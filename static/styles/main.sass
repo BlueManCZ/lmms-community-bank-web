@@ -293,6 +293,10 @@ main
     .submit
       display: none
 
+.particles-js-canvas-el
+  position: absolute
+  top: 0
+
 @media (max-width: 1100px)
   .banner
     .image
@@ -301,6 +305,11 @@ main
       margin: auto !important
       left: 0 !important
       text-align: center !important
+
+  .discord-info
+    width: calc(100% - 420px) !important
+    padding: 0 20px !important
+    margin: 10px 0 !important
 
   main
     padding: 20px 0
@@ -336,19 +345,32 @@ main
       margin-right: 0 !important
 
   .discord-widget
-    width: calc(100% - 60px) !important
-    margin: 30px !important
+    width: calc(100% - 40px) !important
+    margin: 30px 20px !important
 
 @media (max-width: 620px)
   main .tile, .category
     width: 100% !important
 
   .banner
-    height: 220px !important
+    height: auto !important
 
     .slogan
       font-size: 26px !important
-      top: 35px !important
+      height: auto !important
+      display: block !important
+      top: auto !important
+      padding: 30px 0 !important
     h3
       font-size: 17px !important
-      top: 125px !important
+      height: auto !important
+      top: auto !important
+      padding-bottom: 30px !important
+
+  .separator
+    margin-top: auto !important
+
+@media (max-width: 450px)
+  .global-header
+    .right-side
+      display: none
